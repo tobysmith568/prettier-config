@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/tobysmith568/Prettier-Config.git"
   },
+  "scripts": {
+    "release": "npm publish --access public"
+  },
   "author": "Toby Smith",
   "license": "ISC",
   "bugs": {
