@@ -1,0 +1,16 @@
+{
+  "name": "@tobysmith568/prettier-config",
+  "version": "1.0.0",
+  "description": "Toby Smith's (tobysmith568) Prettier config",
+  "main": "index.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobysmith568/Prettier-Config.git"
+  },
+  "author": "Toby Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobysmith568/Prettier-Config/issues"
+  },
+  "homepage": "https://github.com/tobysmith568/Prettier-Config#readme"
+}
