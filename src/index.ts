@@ -1,4 +1,4 @@
-import { Options }   from "prettier";
+import { Options } from "prettier";
 
 const config: Options = {
   printWidth: 100,
