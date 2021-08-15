@@ -1,19 +1,30 @@
 {
   "name": "@tobysmith568/prettier-config",
   "version": "1.0.0",
-  "description": "Toby Smith's (tobysmith568) Prettier config",
-  "main": "index.json",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tobysmith568/Prettier-Config.git"
-  },
-  "scripts": {
-    "release": "npm publish --access public"
-  },
   "author": "Toby Smith",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tobysmith568/Prettier-Config/issues"
+  "description": "Toby Smith's (tobysmith568) Prettier config",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobysmith568/prettier-config.git"
   },
-  "homepage": "https://github.com/tobysmith568/Prettier-Config#readme"
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/tobysmith568/prettier-config/issues"
+  },
+  "homepage": "https://github.com/tobysmith568/prettier-config#readme",
+  "devDependencies": {
+    "@types/prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "prettier": "^2.3.2",
+    "prettier-plugin-organize-imports": "^2.3.3"
+  }
 }
