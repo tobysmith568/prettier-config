@@ -5,6 +5,7 @@ const config: Options = {
   arrowParens: "avoid",
   singleQuote: false,
   trailingComma: "none",
+  bracketSameLine: true
 };
 
 export default config;
