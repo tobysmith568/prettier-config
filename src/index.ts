@@ -8,4 +8,4 @@ const config: Options = {
   bracketSameLine: true
 };
 
-export default config;
+export = config;
