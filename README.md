@@ -1,4 +1,4 @@
-# @tobysmith568/Prettier-Config
+# @tobysmith568/prettier-config
 
 The personal [Prettier](https://prettier.io) config for [Toby Smith](https://github.com/tobysmith568) (tobysmith568).
 
