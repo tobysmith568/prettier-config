@@ -8,17 +8,20 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
 
-      - name: Get version from git tag
+      - name: Get version
         uses: battila7/get-version-action@v2
         id: get_version
 
-      - name: Set version in package.json
+      - name: Set version
         run: npm --no-git-tag-version version ${{ steps.get_version.outputs.version-without-v }}
 
       - name: Install dependencies
@@ -33,6 +36,7 @@ jobs:
         with:
           package-json: ./package.json
 
-      - run: npm publish --access public --tag ${{ steps.latest_tag.outputs.latest-tag }}
+      - name: Publish
+        run: npm publish --access public --tag ${{ steps.latest_tag.outputs.latest-tag }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
