@@ -5,6 +5,7 @@
   "license": "ISC",
   "description": "Toby Smith's (tobysmith568) Prettier config",
   "main": "dist/index.js",
+  "prettier": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tobysmith568/prettier-config.git"
