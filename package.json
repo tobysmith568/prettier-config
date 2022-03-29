@@ -27,6 +27,10 @@
   },
   "devDependencies": {
     "@types/prettier": "^2.4.4",
-    "del-cli": "^4.0.1"
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "del-cli": "^4.0.1",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0"
   }
 }
