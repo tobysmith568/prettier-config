@@ -9,6 +9,10 @@ jobs:
     name: npm Publish
 
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -45,6 +49,6 @@ jobs:
           package-json: ./package.json
 
       - name: Publish
-        run: npm publish --access public --tag ${{ steps.latest_tag.outputs.latest-tag }}
+        run: npm publish --access public --provenance --tag ${{ steps.latest_tag.outputs.latest-tag }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
