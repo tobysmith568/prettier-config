@@ -18,7 +18,8 @@ const config: Options = {
   arrowParens: "avoid",
   singleQuote: false,
   trailingComma: "none",
-  bracketSameLine: true
+  bracketSameLine: true,
+  plugins: ["prettier-plugin-organize-imports"]
 };
 
 export = config;
