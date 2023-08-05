@@ -31,6 +31,6 @@
     "@typescript-eslint/parser": "^6.1.0",
     "del-cli": "^5.0.0",
     "eslint": "^8.11.0",
-    "eslint-config-prettier": "^8.5.0"
+    "eslint-config-prettier": "^9.0.0"
   }
 }
