@@ -20,7 +20,7 @@
     "url": "https://github.com/tobysmith568/prettier-config/issues"
   },
   "homepage": "https://github.com/tobysmith568/prettier-config#readme",
-  "dependencies": {
+  "peerDependencies": {
     "prettier": "^3.0.0",
     "prettier-plugin-organize-imports": "^3.2.3",
     "typescript": "^5.0.0"
