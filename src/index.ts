@@ -1,4 +1,4 @@
-import { Options } from "prettier";
+import { Config } from "prettier";
 
 /**
  * Some of Prettier's defaults can be overridden by an EditorConfig file.
@@ -6,20 +6,29 @@ import { Options } from "prettier";
  *
  * See: https://github.com/prettier/prettier/blob/main/docs/configuration.md#editorconfig
  */
-const nonOverriddenDefaults: Options = {
+const nonOverriddenDefaults: Config = {
   endOfLine: "lf",
   tabWidth: 2,
   printWidth: 100,
   useTabs: false
 };
 
-const config: Options = {
+const config: Config = {
   ...nonOverriddenDefaults,
   arrowParens: "avoid",
   singleQuote: false,
   trailingComma: "none",
   bracketSameLine: true,
-  plugins: ["prettier-plugin-organize-imports"]
+  plugins: ["prettier-plugin-organize-imports", "prettier-plugin-astro"],
+
+  overrides: [
+    {
+      files: "*.astro",
+      options: {
+        parser: "astro"
+      }
+    }
+  ]
 };
 
 export = config;
