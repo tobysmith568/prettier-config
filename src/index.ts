@@ -19,13 +19,19 @@ const config: Config = {
   singleQuote: false,
   trailingComma: "none",
   bracketSameLine: true,
-  plugins: ["prettier-plugin-organize-imports", "prettier-plugin-astro"],
+  plugins: ["prettier-plugin-organize-imports", "prettier-plugin-astro", "prettier-plugin-ignored"],
 
   overrides: [
     {
       files: "*.astro",
       options: {
         parser: "astro"
+      }
+    },
+    {
+      files: "pnpm-lock.yaml",
+      options: {
+        parser: "ignored"
       }
     }
   ]
