@@ -20,11 +20,13 @@
     "url": "https://github.com/tobysmith568/prettier-config/issues"
   },
   "homepage": "https://github.com/tobysmith568/prettier-config#readme",
-  "peerDependencies": {
-    "prettier": "^3.0.0",
+  "dependencies": {
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-ignored": "^1.0.0",
-    "prettier-plugin-organize-imports": "^4.0.0",
+    "prettier-plugin-organize-imports": "^4.0.0"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0",
     "typescript": "^5.0.0"
   },
   "devDependencies": {
