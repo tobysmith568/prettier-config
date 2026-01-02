@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/tobysmith568/prettier-config#readme",
   "dependencies": {
-    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-ignored": "^1.0.0",
-    "prettier-plugin-organize-imports": "^4.0.0"
+    "prettier-plugin-organize-imports": "^4.3.0"
   },
   "peerDependencies": {
     "prettier": "^3.0.0",
