@@ -31,6 +31,6 @@
   },
   "devDependencies": {
     "@tobysmith568/eslint-config": "^2.6.0",
-    "del-cli": "^7.0.0"
+    "del-cli": "^8.0.0"
   }
 }
