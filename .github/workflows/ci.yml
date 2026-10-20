@@ -35,3 +35,6 @@ jobs:
 
       - name: Run Prettier
         run: npx prettier --check .
+
+      - name: Run License Cop
+        run: npx license-cop
