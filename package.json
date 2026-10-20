@@ -30,7 +30,7 @@
     "typescript": "^6.0.0"
   },
   "devDependencies": {
-    "@tobysmith568/eslint-config": "^2.6.0",
+    "@tobysmith568/eslint-config": "^2.7.1",
     "del-cli": "^8.0.0"
   }
 }
