@@ -30,7 +30,9 @@
     "typescript": "^6.0.0"
   },
   "devDependencies": {
+    "@license-cop/permissive": "^2.2.1",
     "@tobysmith568/eslint-config": "^2.7.1",
-    "del-cli": "^8.0.0"
+    "del-cli": "^8.0.0",
+    "license-cop": "^2.2.1"
   }
 }
