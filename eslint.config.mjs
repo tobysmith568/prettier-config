@@ -1,4 +1,6 @@
-import tobysmith568 from "@tobysmith568/eslint-config";
+import recommended from "@tobysmith568/eslint-config";
+import node from "@tobysmith568/eslint-config/node";
+import prettier from "@tobysmith568/eslint-config/prettier";
+import { defineConfig } from "eslint/config";
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [...tobysmith568.recommended];
+export default defineConfig([recommended, node, prettier]);
