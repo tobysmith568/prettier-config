@@ -44,7 +44,7 @@ jobs:
         run: npx prettier --check .
 
       - name: Get publish tag
-        uses: tobysmith568/npm-publish-latest-tag@v1
+        uses: tobysmith568/npm-publish-latest-tag@v2
         id: latest_tag
         with:
           package-json: ./package.json
